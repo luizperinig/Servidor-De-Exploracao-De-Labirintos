@@ -456,7 +456,7 @@ void process_command(char *cmd, char *response) {
              game_board[player_y][player_x + 1] == EXIT)) {
             player_x++;
         } else {
-            strcpy(response, "error: you cannot go this way!\n");
+            strcpy(response, "error: you cannot go this way\n");
         }
         char moves[BUFSZ];
         get_possible_moves(player_x, player_y, moves);
